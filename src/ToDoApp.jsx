@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
 function ToDoApp(){
 
-    const [tasks, setTasks] = useState([]);
+    const [tasks, setTasks] = useState(["Eat Breakfast", "Bathe", "Wash Dishes"]);
     const [newTask, setNewTask] = useState("");
 
     function handleInputChange(event){
+        setNewTask(event.target.value);
 
     }
     function addTask(){
@@ -33,6 +34,13 @@ function ToDoApp(){
         value={newTask}
         onChange={handleInputChange}
         </input>
+        <button 
+        className="add-button"
+        onClick={addTask}>
+            Add
+
+        </button>
+        
 
     </div>
     </div>) ;
