@@ -43,6 +43,17 @@ function ToDoApp(){
         
 
     </div>
+
+    <ol>
+       {tasks.map((task, index) => 
+    <li key={index}>
+       <span className="text">{task}</span>
+       <button>
+        Delete
+       </button>
+    </li>
+    )} 
+    </ol>
     </div>) ;
 }
 export default ToDoApp
