@@ -110,9 +110,11 @@ code {
   background: var(--code-bg);
 }
 
+body{
+  background-color: rgb(33, 33, 33);
+}
 
-
-.to-do-list{
+.to-do-app{
   font-family: Arial, sans-serif;
   text-align: center;
   margin-top: 100px;
@@ -120,6 +122,7 @@ code {
 }
 h1{
   font-size: 4rem;
+  color: white;
 }
 button{
   font-size: 1.7rem;
@@ -171,4 +174,13 @@ li{
   border-radius: 5px;
   display: flex;
   align-items: center;
+}
+.text{
+  flex: 1;
+}
+.delete-button, .move-button{
+  padding: 8px 12px;
+  font-size: 1.4rem;
+  margin-left: 10px;
+  
 }
