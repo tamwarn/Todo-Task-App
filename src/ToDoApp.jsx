@@ -48,8 +48,20 @@ function ToDoApp(){
        {tasks.map((task, index) => 
     <li key={index}>
        <span className="text">{task}</span>
-       <button>
+       <button
+        className= "delete-button"
+        onClick={() => deleteTask(index)}>
         Delete
+       </button>
+       <button
+        className= "move-button"
+        onClick={() => moveTaskUp(index)}>
+        Up
+       </button>
+       <button
+        className= "move-button"
+        onClick={() => moveTaskDown(index)}>
+        Down
        </button>
     </li>
     )} 
