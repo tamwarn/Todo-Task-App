@@ -18,6 +18,8 @@ function ToDoApp(){
     }
     function deleteTask(index){
 
+        const updatedTasks = tasks.filter((_, i) => i !== index);
+        setTasks(updatedTasks);
     }
     function moveTaskUp(index){
 
